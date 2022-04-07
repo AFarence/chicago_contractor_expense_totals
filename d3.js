@@ -15,7 +15,7 @@
   // Color scale based on price per sq ft
   const colorScale = d3.scaleOrdinal()
         .domain([1,2])
-        .range(["#FF0000","#0000FF"]) 
+        .range(["#00FF00","#0000FF"]) 
 
   // Set radius scale
   const radiusScale = d3.scaleSqrt()
@@ -106,5 +106,7 @@
 
 // Create our number formatter.
 var formatter = new Intl.NumberFormat('en-US', {
+  notation : 'compact',
   style: 'currency',
-  currency: 'USD'});
+  currency: 'USD',
+});
