@@ -81,7 +81,7 @@
           .style("visibility", "visible")
           .attr('class','tooltipdiv')
           .html(`<h4><strong>${d.company_name}</strong></h4>` + 
-                `<p><strong>Money Spent</strong>: ${formatter.format(d.money)}<br />`);
+                `<p><strong>Value of Permits</strong>: ${formatter.format(d.money)}<br />`);
       })
       .on("mousemove", function(e) {
         tooltip
