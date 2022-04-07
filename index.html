@@ -91,6 +91,32 @@
       margin-bottom: 0em;
     }
 
+    ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;       
+    }
+
+    .input-color {
+        position: relative;
+    }
+
+    .input-color input {
+        padding-left: 20px;
+        margin-bottom: 10px;
+    }
+
+    .input-color .color-box {
+        width: 10px;
+        height: 10px;
+        display: inline-block;
+        background-color: #ccc;
+        position: absolute;
+        left: 5px;
+        top: 5px;
+        border: 1px solid #000;
+    }
+
     </style>
   </head>
 </head>
@@ -105,6 +131,11 @@
   const voronoi = delaunay.voronoi([0, 0, 960, 500]);
 
 </script>
+
+<div class="legend">
+  <p>Green: May 1, 2017 - April 30, 2018</p>
+  <p>Blue: January 1, 2021 - December 7, 2021</p>
+</div>
 
 <div class="container">
   <div id="chart"></div>
